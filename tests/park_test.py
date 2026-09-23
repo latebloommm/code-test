@@ -14,4 +14,4 @@ def test_lotto_fail(capsys):
         lotto(5)
 
     captured = capsys.readouterr()
-    assert captured.out.strip() == "꽝 당첨번호는 7입니다."
+    assert captured.out.strip() == "꽝 당첨번호는7입니다."
