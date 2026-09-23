@@ -1,8 +1,8 @@
-from src.lotto import lotto
+from src.park_code import lotto
 from unittest.mock import patch
 
 def test_lotto_win(capsys):
-    with patch("src.lotto.random.randint", return_value=5):
+    with patch("src.park_code.random.randint", return_value=5):
         lotto(5)
 
     captured = capsys.readouterr()
@@ -10,7 +10,7 @@ def test_lotto_win(capsys):
 
 
 def test_lotto_fail(capsys):
-    with patch("src.lotto.random.randint", return_value=7):
+    with patch("src.park_code.random.randint", return_value=7):
         lotto(5)
 
     captured = capsys.readouterr()
