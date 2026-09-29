@@ -1,0 +1,31 @@
+name: Daily Lint and Pytest
+
+on:
+  schedule:
+    # 매일 09:00 KST = 00:00 UTC
+    - cron: '36 17 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ruff
+        run: pip install ruff
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run ruff
+        run: python3 -m ruff check src
+
+      - name: Run pytest
+        run: python3 -m pytest tests
