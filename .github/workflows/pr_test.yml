@@ -1,4 +1,4 @@
-name: Python Test
+name: Lint and Pytest for PR
 
 on:
   pull_request:
