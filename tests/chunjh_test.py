@@ -1,4 +1,4 @@
-from src.chunjh2_codetest import multiply
+from src.chunjh2_codetest import chunjh2
 
 
 def test_multiply():
