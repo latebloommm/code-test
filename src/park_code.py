@@ -8,4 +8,4 @@ def lotto(a):
 	if user_num == win_num:
 		print("당첨")
 	else:
-		print("꽝 당첨번호는{{ win_num }}입니다.")
+		print(f"꽝 당첨번호는{win_num}입니다.")
