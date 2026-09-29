@@ -1,5 +1,5 @@
-from src.chunjh2_codetest import calculate_score
+from src.chunjh2_codetest import multiply
 
 
-def test_calculate_score():
-    assert calculate_score(15) == 25
+def test_multiply():
+    assert multiply(3, 4) == 12
