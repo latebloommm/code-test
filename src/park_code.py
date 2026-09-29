@@ -1,5 +1,6 @@
 import random
 
+
 def lotto(a):
 	win_num = random.randint(1,10)
 	user_num = a
