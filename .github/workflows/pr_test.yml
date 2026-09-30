@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, practice-basic-VM]
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
