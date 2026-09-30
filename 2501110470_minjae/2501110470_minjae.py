@@ -1,4 +1,4 @@
-n = int(input("n을 입력하세요: "))
+n = int(input("n을 입력하세요.: "))
 
 total = sum(range(1, n + 1))
 
