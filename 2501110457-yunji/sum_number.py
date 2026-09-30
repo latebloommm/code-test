@@ -5,4 +5,4 @@ result = sum(range(1, n + 1))
 print(f"1부터 {n}까지의 합: {result}")
 print("I'm yunji")
 
-print("하하하하하 0923")
+print("하하하하하 0923.")
