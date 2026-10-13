@@ -1,1 +1,20 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "kopo-calc-cloudcomputing"
+version = "0.1.0"
+description = "A simple calculator for Python packaging lab"
+readme = "README.md"
+requires-python = ">=3.12"
+
+# 의존성 패키지
+dependencies = [
+    "requests>=2.31.0",
+    "numpy>=1.26.0",
+    "pandas>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
