@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kopo-calc-cloudcomputing"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple calculator for Python packaging lab"
 readme = "README.md"
 requires-python = ">=3.12"
